@@ -1,0 +1,288 @@
+ * {
+    padding: 0;
+    margin: 0;
+}
+
+/* hide the scroll bar */
+*::-webkit-scrollbar {
+	display: none;
+}
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.container {
+    position: relative;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    transition: top 0.9s ease-out;
+}
+
+.main {
+    position: relative;
+    color: #F6F6F8;
+    text-shadow: 5px 5px 5px rgb(0,0,0,0.5);
+    box-shadow: 0 2px 30px rgb(0,0,0,0.6);
+}
+
+.main .main_img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../Images/Main.jpg);
+    background-size: 100% 100%;
+}
+
+.main .main_name {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    font-size: 5em;
+    letter-spacing: 0.1em;
+}
+
+.main .main_motto1 {
+    position: absolute;
+    height: 100px;
+    width: 40px;
+    font-size: 1.6em;
+}
+
+.main .main_motto2 {
+    position: absolute;
+    height: 100px;
+    width: 40px;
+    font-size: 1.6em;
+}
+
+.main .main_motto3 {
+    position: absolute;
+    height: 100px;
+    width: 40px;
+    font-size: 1.6em;
+}
+
+.main .main_pull_down {
+    position: absolute;
+    left: calc(50% + -35px);
+    bottom: 20px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../Images/PullDown.png);
+    background-size: 100% 100%;
+    transition: bottom 0.9s ease-out;
+}
+
+
+/* content */
+
+.page2 {
+    position: absolute;
+    transition: 0.9s ease-out;
+}
+
+.content {
+    position: relative;
+    height: 200px;
+    width: 1400px!important;
+    margin-left: 0;
+}
+
+.content_left {
+    position: absolute;
+    left: 0;
+    top: 32px;
+}
+
+.individual_label {
+    position: relative;
+    width: 384px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(0,0,0,0.5);
+    text-shadow: 0 0 3px rgb(0,0,0,0.3);
+    color: rgba(56, 54, 54, 0.8);
+}
+
+.individual_label_image {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(../Images/IndividualLabel.jpg);
+    background-size: 150% 150%;
+    background-position: 40% 70%;
+}
+
+.individual_label_user_image {
+    position: absolute;
+    top: 110px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-image: url(../Images/User.jpg);
+    background-size: 100% 100%;
+    box-shadow: 0 0 20px rgb(0,0,0,0.6);
+}
+
+.individual_label_user_name {
+    position: absolute;
+    top: 250px;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 2.2em;
+    text-shadow: 0 0 3px rgb(0,0,0,0.3);
+}
+
+.individual_label_position_image {
+    position: absolute;
+    top: 312px;
+    left: calc(50% - 60px);
+    width: 25px;
+    height: 25px;
+    background-image: url(../Images/Position.png);
+    background-size: 100% 100%;
+}
+
+.individual_label_position_name {
+    position: absolute;
+    top: 310px;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.3em;
+    text-shadow: 0 0 3px rgb(0,0,0,0.3);
+}
+
+.individual_label_information {
+    display: flex;
+    position: absolute;
+    left: 10%;
+    top: 375px;
+    width: 80%;
+    height: 60px;
+}
+
+.individual_label_information_box {
+    position: relative;
+    width: 25%;
+}
+
+.individual_label_information_box_name {
+    position: absolute;
+    top: 2px;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.individual_label_information_box_number {
+    position: absolute;
+    top: 35px;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.individual_label_contact {
+    cursor: pointer;
+    position: absolute;
+    top: 450px;
+    left: calc(50% - 160px);
+    width: 320px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(25, 224, 158);
+    color: white;
+}
+
+.individual_label_contact_line {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 515px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 50px;
+}
+
+.individual_label_contact_line > div{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+}
+
+.individual_label_contact_line_QQ {
+    background-image: url(../Images/QQ.png);
+}
+
+.individual_label_contact_line_Wechat {
+    background-image: url(../Images/Wechat.png);
+}
+
+.individual_label_contact_line_Github {
+    background-image: url(../Images/Github.png);
+}
+
+
+
+/* content_right */
+
+.content_right {
+    position: absolute;
+    left: 410px;
+    top: 32px;
+    width: 990px;
+    height: 1200px;
+}
+
+.article .article_card {
+    position: relative;
+    width: 100%;
+    height: 230px;
+}
+
+.article .article_card .article_card_left {
+    width: 750px;
+    height: 100%;
+    background-image: url(/src/Images/wait4.jpeg);
+    background-size: 100% 180%;
+    background-position: 30% 30%;
+    -webkit-filter: blur(0.4em);
+    filter: blue(0.4em);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.article .article_card .article_card_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background-image: url(../Images/wait4.jpeg);
+    background-size: 120% 120%;
+    background-position: 50% 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    -webkit-clip-path: polygon(15% 0,100% 0,100% 100%,0 100%);
+    clip-path: polygon(20% 0,100% 0,100% 100%,0 100%);
+}
+
